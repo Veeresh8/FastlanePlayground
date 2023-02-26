@@ -1,0 +1,10 @@
+default_platform(:android)
+
+platform :android do
+
+  desc "Generate debug apk"
+  lane :debug do
+    gradle(task: ":app:assembleDebug")
+  end
+
+end
